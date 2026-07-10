@@ -426,9 +426,51 @@ in a single request.
 ---
 
 # Test 5 - Deep Insert (Order + Items)
-
+# Deep Insert-Example 1
 ```http
-POST http://localhost:4004/SalesOrderService/SalesOrders
+POST http://localhost:4004/SalesOrderService/SalesOrders HTTP/1.1
+Content-Type: application/json
+
+{
+  "ID": "2",
+  "description": "Order 2",
+  "customerNo": "C1",
+  "salesOrg":"IN01",
+  "items": [
+    {
+      "item": 10,
+      "material": "Laptop",
+      "quantity": 100
+    },
+    {
+      "item": 20,
+      "material": "Printer",
+      "quantity": 50
+    },
+    {
+      "item": 30,
+      "material": "Mobile",
+      "quantity": 20
+    }
+  ]
+}
+```
+# Deep Insert-Example 2
+```http
+POST http://localhost:4004/SalesOrderService/Customers
+Content-Type: application/json
+
+{
+  "customerNo": "C1",
+  "customerName": "Peter",
+  "addresses": {
+    "ID": 100,
+    "city": "Chennai",
+    "country": "IN",
+    "contact_phonenumber": "123-456-78",
+    "contact_email": "Peter@gmail.com"
+  }
+}
 ```
 
 Create Parent and Child records together.
