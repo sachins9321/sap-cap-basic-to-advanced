@@ -1,0 +1,4 @@
+parent_ID,itemNo,productName,quantity,price
+ORD001,10,Laptop,1,60000
+ORD001,20,Mouse,2,1000
+ORD002,10,Monitor,1,15000
