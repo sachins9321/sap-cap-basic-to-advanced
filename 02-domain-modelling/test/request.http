@@ -1,0 +1,81 @@
+### Service Document
+GET http://localhost:4004/
+Accept: application/json
+
+###
+
+### Metadata
+GET http://localhost:4004/odata/v4/project/$metadata
+Accept: application/xml
+
+###
+
+### Get All Users
+GET http://localhost:4004/odata/v4/project/Users
+Accept: application/json
+
+###
+
+### Get User By ID
+GET http://localhost:4004/odata/v4/project/Users(1000)
+Accept: application/json
+
+###
+
+### Get All Projects
+GET http://localhost:4004/odata/v4/project/Projects
+Accept: application/json
+
+###
+
+### Get Project By ID
+GET http://localhost:4004/odata/v4/project/Projects(1)
+Accept: application/json
+
+###
+POST http://localhost:4004/odata/v4/project/Projects
+Accept: application/json
+Content-Type: application/json
+{
+  "Name": "New Project",
+  "Description": "This is a new project.",
+  "StartDate": "2024-01-01T00:00:00Z",
+  "EndDate": "2024-12-31T23:59:59Z"
+}
+
+### Update Project By ID
+PATCH http://localhost:4004/odata/v4/project/Projects(1)
+Accept: application/json
+Content-Type: application/json
+{
+  "Description": "Updated project description."
+}
+
+### Delete Project By ID
+DELETE http://localhost:4004/odata/v4/project/Projects(1)
+Accept: application/json
+
+### Get All Users
+GET http://localhost:4004/odata/v4/project/Users
+Accept: application/json
+
+### 
+POST http://localhost:4004/odata/v4/project/Users
+Accept: application/json
+Content-Type: application/json
+{
+  "Name": "John Doe",
+  "Email": "a@na.com"
+}
+
+### Update User By ID
+PATCH http://localhost:4004/odata/v4/project/Users(1000)
+Accept: application/json
+Content-Type: application/json
+{
+  "Email": "name@g.com"
+}
+
+### Delete User By ID
+DELETE http://localhost:4004/odata/v4/project/Users(1000)
+Accept: application/json
