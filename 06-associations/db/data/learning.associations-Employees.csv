@@ -1,0 +1,4 @@
+ID,employeeName,designation,salary,department_ID
+E1001,Sachin,CAP Developer,120000,D100
+E1002,Rahul,Full Stack Developer,100000,D200
+E1003,Amit,UI5 Developer,95000,D100
