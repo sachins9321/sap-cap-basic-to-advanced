@@ -1,0 +1,4 @@
+ID,name,email,designation,salary,joiningDate,status
+1001,Sachin,sachin@gmail.com,SAP Developer,120000,2025-01-10,Active
+1002,Rahul,rahul@gmail.com,CAP Developer,100000,2025-02-15,Active
+1003,Amit,amit@gmail.com,UI5 Developer,90000,2025-03-01,OnLeave
